@@ -19,7 +19,7 @@ Indonesia Name and Address Preprocessing
 
 ## Features
 
-* TODO
+* Preprocessing Indonesia name and address.
 
 ## Credits
 
