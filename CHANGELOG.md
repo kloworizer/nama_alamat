@@ -1,7 +1,7 @@
 # Changelog
 
 
-## 0.1.2 (2022-03-05)
+## 0.2.0 (2022-03-05)
 ### Added
 
 * Preprocessing module
