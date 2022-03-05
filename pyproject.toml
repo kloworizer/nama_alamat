@@ -1,7 +1,7 @@
 [tool]
 [tool.poetry]
 name = "nama_alamat"
-version = "0.2.3"
+version = "0.2.4"
 homepage = "https://github.com/kloworizer/nama_alamat"
 description = "Indonesia Name and Address Preprocessing."
 authors = ["Esha Indra <esha.indra@gmail.com>"]
