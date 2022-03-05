@@ -1,1 +1,1 @@
-"""_summary_."""
+"""Dictionary used for preprocessing string."""

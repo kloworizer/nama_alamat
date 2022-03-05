@@ -1,7 +1,7 @@
 # Indonesia Name and Address Preprocessing
 
-[![pypi](https://img.shields.io/pypi/v/nama_alamat.svg)](https://pypi.org/project/nama-alamat/)
-[![python](https://img.shields.io/pypi/pyversions/nama_alamat.svg)](https://pypi.org/project/nama-alamat/)
+[![pypi](https://img.shields.io/pypi/v/nama_alamat.svg)](https://pypi.org/project/nama_alamat/)
+[![python](https://img.shields.io/pypi/pyversions/nama_alamat.svg)](https://pypi.org/project/nama_alamat/)
 [![Build Status](https://github.com/kloworizer/nama_alamat/actions/workflows/dev.yml/badge.svg)](https://github.com/kloworizer/nama_alamat/actions/workflows/dev.yml)
 [![codecov](https://codecov.io/gh/kloworizer/nama_alamat/branch/main/graphs/badge.svg)](https://codecov.io/github/kloworizer/nama_alamat)
 
@@ -9,7 +9,7 @@ Indonesia Name and Address Preprocessing
 
 -   Documentation: <https://kloworizer.github.io/nama_alamat>
 -   GitHub: <https://github.com/kloworizer/nama_alamat>
--   PyPI: <https://pypi.org/project/nama-alamat/>
+-   PyPI: <https://pypi.org/project/nama_alamat/>
 -   Free software: MIT
 
 ## Features
@@ -26,16 +26,16 @@ pip install nama-alamat
 
 ```
 from nama_alamat.preprocessing import Preprocessing
-preprocessing_nama = Preproccessing(tipe='nama')
+preprocessing_nama = Preprocessing(tipe='nama')
 strings = 'IR SULAEMAN'
-preprocessing_nama.preprocessing(strings)
+print(preprocessing_nama.preprocessing(strings))
 ```
 
 ```
 from nama_alamat.preprocessing import Preprocessing
-preprocessing_alamat = Preproccessing(tipe='alamat')
-strings = 'IR SULAEMAN'
-preprocessing_alamat.preprocessing(strings)
+preprocessing_alamat = Preprocessing(tipe='alamat')
+strings = 'JALAN GARUDA IX BLOK C/3 RT 003 RW 002, JAKARTA UTARA, DKI JAKARTA 12110'
+print(preprocessing_alamat.preprocessing(strings))
 ```
 
 ## Credits

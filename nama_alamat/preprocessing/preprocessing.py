@@ -1,7 +1,8 @@
-"""_summary_.
+"""
+Module for preprocessing Indonesia Name and Address.
+Dictionary for preproccesing on dict_files folder.
 
-Returns:
-    _type_: _description_
+Roman library used for converting roman number to arabic.
 """
 
 # import library
@@ -30,25 +31,25 @@ with open(os.path.join(here, 'dict_files', 'dict_nama.txt'), 'r') as file:
 
 
 class Preprocessing:
-    """_summary_."""
+    """Preprocessing class."""
 
     def __init__(self, tipe='alamat'):
-        """_summary_.
+        """Class initialization.
 
         Args:
-            tipe (str, optional): _description_. Defaults to 'alamat'.
+            tipe (str, optional): valid value : 'alamat' for address or 'nama' for name. Defaults to 'alamat'.
         """
         self.tipe = tipe
 
     # standarisasi penulisan nama dan alamat
     def standardize(self, strings):
-        """_summary_.
+        """Standardize function.
 
         Args:
-            strings (_type_): _description_
+            strings (_type_): input string
 
         Returns:
-            _type_: _description_
+            _type_: returning standarized string based on type (name or address)
         """
         tipe = self.tipe
         if tipe == 'alamat':
@@ -63,13 +64,13 @@ class Preprocessing:
         return result
 
     def preprocessing(self, strings):
-        """_summary_.
+        """preprocessing function.
 
         Args:
-            strings (_type_): _description_
+            strings (_type_): input string
 
         Returns:
-            _type_: _description_
+            _type_: return preprocessed string
         """
         tipe = self.tipe
 
