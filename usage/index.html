@@ -372,8 +372,18 @@
                 
                 <h2 id="usage">Usage<a class="headerlink" href="#usage" title="Permanent link">&para;</a></h2>
 <p>To use Indonesia Name and Address Preprocessing in a project</p>
-<div class="highlight"><pre><span></span><code>import nama_alamat
-</code></pre></div>
+<p>example of name preproccesing:
+<div class="highlight"><pre><span></span><code>from nama_alamat.preprocessing import Preprocessing
+preprocessing_nama = Preprocessing(tipe=&#39;nama&#39;)
+strings = &#39;IR SULAEMAN&#39;
+print(preprocessing_nama.preprocessing(strings))
+</code></pre></div></p>
+<p>address preproccesing:
+<div class="highlight"><pre><span></span><code>from nama_alamat.preprocessing import Preprocessing
+preprocessing_alamat = Preprocessing(tipe=&#39;alamat&#39;)
+strings = &#39;JALAN GARUDA IX BLOK C/3 RT 003 RW 002, JAKARTA UTARA, DKI JAKARTA 12110&#39;
+print(preprocessing_alamat.preprocessing(strings))
+</code></pre></div></p>
                 
               
               
