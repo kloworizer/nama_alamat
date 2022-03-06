@@ -2,6 +2,9 @@
 
 ## [Unreleased]
 
+## [0.2.6] - 2022-03-06
+### Added
+* Documentation and testing
 ## [0.2.5] - 2022-03-06
 ### Added
 * Documentation
