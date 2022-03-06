@@ -2,21 +2,21 @@
 
 ## Stable release
 
-To install Indonesia Name and Address Preprocessing, run this command in your
+To install Indonesia Name and Address Preprocessor, run this command in your
 terminal:
 
 ``` console
 $ pip install nama_alamat
 ```
 
-This is the preferred method to install Indonesia Name and Address Preprocessing, as it will always install the most recent stable release.
+This is the preferred method to install Indonesia Name and Address Preprocessor, as it will always install the most recent stable release.
 
 If you don't have [pip][] installed, this [Python installation guide][]
 can guide you through the process.
 
 ## From source
 
-The source for Indonesia Name and Address Preprocessing can be downloaded from
+The source for Indonesia Name and Address Preprocessor can be downloaded from
 the [Github repo][].
 
 You can either clone the public repository:

@@ -3,7 +3,7 @@
 name = "nama_alamat"
 version = "0.2.5"
 homepage = "https://github.com/kloworizer/nama_alamat"
-description = "Indonesia Name and Address Preprocessing."
+description = "Indonesia Name and Address Preprocessor."
 authors = ["Esha Indra <esha.indra@gmail.com>"]
 readme = "README.md"
 license =  "MIT"

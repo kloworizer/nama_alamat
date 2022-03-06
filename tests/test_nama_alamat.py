@@ -21,8 +21,15 @@ def response():
 
     strings1 = 'IR SULAEMAN'
     strings2 = 'JALAN GARUDA IX BLOK C/3 RT 003 RW 002, JAKARTA UTARA, DKI JAKARTA 12110'
+    strings3 = 'A L I'
+    strings4 = 'DONI DONI'
 
-    return preprocessing_nama.preprocessing(strings1) + preprocessing_alamat.preprocessing(strings2)
+    return (
+        preprocessing_nama.preprocessing(strings1)
+        + preprocessing_alamat.preprocessing(strings2)
+        + preprocessing_nama.preprocessing(strings3)
+        + preprocessing_nama.preprocessing(strings4)
+    )
 
 
 def test_content(response):

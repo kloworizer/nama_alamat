@@ -1,11 +1,11 @@
-# Indonesia Name and Address Preprocessing
+# Indonesia Name and Address Preprocessor
 
 [![pypi](https://img.shields.io/pypi/v/nama_alamat.svg)](https://pypi.org/project/nama_alamat/)
 [![python](https://img.shields.io/pypi/pyversions/nama_alamat.svg)](https://pypi.org/project/nama_alamat/)
 [![Build Status](https://github.com/kloworizer/nama_alamat/actions/workflows/dev.yml/badge.svg)](https://github.com/kloworizer/nama_alamat/actions/workflows/dev.yml)
 [![codecov](https://codecov.io/gh/kloworizer/nama_alamat/branch/main/graphs/badge.svg)](https://codecov.io/github/kloworizer/nama_alamat)
 
-Indonesia Name and Address Preprocessing
+Indonesia Name and Address Preprocessor
 
 -   Documentation: <https://kloworizer.github.io/nama_alamat>
 -   GitHub: <https://github.com/kloworizer/nama_alamat>

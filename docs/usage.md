@@ -1,6 +1,6 @@
 # Usage
 
-To use Indonesia Name and Address Preprocessing in a project
+To use Indonesia Name and Address Preprocessor in a project
 
 example of name preproccesing:
 ```
