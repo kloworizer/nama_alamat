@@ -1,7 +1,6 @@
-"""
-Module for preprocessing Indonesia Name and Address.
-Dictionary for preproccesing on dict_files folder.
+"""Module for preprocessing Indonesia Name and Address.
 
+Dictionary for preproccesing on dict_files folder.
 Roman library used for converting roman number to arabic.
 """
 
@@ -64,7 +63,7 @@ class Preprocessing:
         return result
 
     def preprocessing(self, strings):
-        """preprocessing function.
+        """Preprocessing function.
 
         Args:
             strings (_type_): input string

@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+
 """Tests for `nama_alamat` package."""
 
 import pytest
@@ -13,9 +14,21 @@ def response():
     # import requests
     # return requests.get('https://github.com/audreyr/cookiecutter-pypackage')
 
+    from nama_alamat.preprocessing import Preprocessing
+
+    preprocessing_nama = Preprocessing(tipe='nama')
+    preprocessing_alamat = Preprocessing(tipe='alamat')
+
+    strings1 = 'IR SULAEMAN'
+    strings2 = 'JALAN GARUDA IX BLOK C/3 RT 003 RW 002, JAKARTA UTARA, DKI JAKARTA 12110'
+
+    return preprocessing_nama.preprocessing(strings1) + preprocessing_alamat.preprocessing(strings2)
+
 
 def test_content(response):
     """Sample pytest test function with the pytest fixture as an argument."""
     # from bs4 import BeautifulSoup
     # assert 'GitHub' in BeautifulSoup(response.content).title.string
+    assert 'sulaeman' in response
+    assert 'jakarta' in response
     del response

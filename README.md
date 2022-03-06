@@ -24,6 +24,7 @@ pip install nama-alamat
 
 ## Usage
 
+example of name preproccesing:
 ```
 from nama_alamat.preprocessing import Preprocessing
 preprocessing_nama = Preprocessing(tipe='nama')
@@ -31,6 +32,7 @@ strings = 'IR SULAEMAN'
 print(preprocessing_nama.preprocessing(strings))
 ```
 
+address preproccesing:
 ```
 from nama_alamat.preprocessing import Preprocessing
 preprocessing_alamat = Preprocessing(tipe='alamat')

@@ -2,6 +2,7 @@
 
 To use Indonesia Name and Address Preprocessing in a project
 
+example of name preproccesing:
 ```
 from nama_alamat.preprocessing import Preprocessing
 preprocessing_nama = Preprocessing(tipe='nama')
@@ -9,6 +10,7 @@ strings = 'IR SULAEMAN'
 print(preprocessing_nama.preprocessing(strings))
 ```
 
+address preproccesing:
 ```
 from nama_alamat.preprocessing import Preprocessing
 preprocessing_alamat = Preprocessing(tipe='alamat')

@@ -2,6 +2,9 @@
 
 ## [Unreleased]
 
+## [0.2.4] - 2022-03-05
+### Added
+* Documentation
 ## [0.2.3] - 2022-03-05
 ### Added
 * Fix bugs

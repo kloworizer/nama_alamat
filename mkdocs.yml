@@ -50,6 +50,13 @@ plugins:
   - search:
       lang: en
   - mkdocstrings:
+      handlers:
+        python:
+          # setup_commands:
+          #   - import sys
+          #   - sys.path.append('../')
+          selection:
+            new_path_syntax: true
       watch:
         - nama_alamat
 extra:
