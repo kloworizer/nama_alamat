@@ -96,12 +96,14 @@ class Preprocessing:
             # remove non ascii chars
             result = re.sub(r'[^\x00-\x7f]', '', result)
 
+            # remove old style name
+            if re.match(r'^(?:\w ){2,}[A-z]($|\W)', result):
+                result = ''.join(result.split())
+
             # remove inside bracket
             result = re.sub(r'\([^)]*\)', '', result)
 
             # remove stopword
-            # for i in stopword:
-            #     result = re.sub(i,'',result)
             result = reduce(lambda a, b: a.replace(b, ''), stopword, result)
 
             if tipe == 'nama':
@@ -120,10 +122,6 @@ class Preprocessing:
             # remove double space
             result = re.sub(r'\s+', ' ', result)
 
-            # remove old style name 'A L I'
-            if re.match(r'^(?:\w ){2,}[A-z]($|\W)', result):
-                result = ''.join(result.split())
-
             # standardize
             result = self.standardize(result)
 
@@ -135,9 +133,8 @@ class Preprocessing:
 
             # hapus nama 1 kata diulang
             if tipe == 'nama':
-                len_nama = len(result.split())
-                if len_nama == 2 and result.split()[0] == result.split()[1]:
-                    result = result.split()[0]
+                result = [x.strip() for x in result.split()]
+                result = ' '.join(list(dict.fromkeys(result)))
 
             # roman to arabic
             if tipe == 'alamat':

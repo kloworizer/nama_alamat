@@ -2,6 +2,11 @@
 
 ## [Unreleased]
 
+## [0.2.7] - 2022-03-18
+### Added
+* Additional string in dict_nama
+* Change logic for preprocessing repeated word and old typing style ie. 'A L I'
+
 ## [0.2.6] - 2022-03-06
 ### Added
 * Documentation and testing
